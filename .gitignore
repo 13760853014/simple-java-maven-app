@@ -1,13 +1,23 @@
-.DS_Store
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+# 忽略maven的编译目录
+**/target
+# 忽略eclipse的项目配置文件及编译目录
+.classpath
+.project
+*.prefs
+.settings
+**/.classpath
+**/.project
+**/.settings
+**/bin
+# 忽略IDEA的项目配置文件
+.idea
+**/*.iml
+# 忽略IDEA生成的插件配置文件
 
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
+!pom.xml
+_windows
+colors
+inspection
+# 忽略spring boot本地配置文件
+#**/application-local.yml
+**/application-test.yml
